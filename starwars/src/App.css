@@ -7,4 +7,10 @@
   font-size: 5rem;
 
 }
+
+.instruction{
+  font-size: 1.5rem;
+  -webkit-text-stroke: 1px #FFE300;
+  color: white;
+}
 /* write your parent styles in here for your App.js */
