@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
-
 const Card= styled.div`
    width: 100%;
    border: 1px solid red;
@@ -12,16 +10,12 @@ const Card= styled.div`
 
  const CardBox=styled.div`
     width: 100%;
-  
-
- `;
+  `;
 
 
  const CardTitle= styled.h1`
   color: white;
-  
-  
- `;
+   `;
 
  const CardText= styled.p`
    color: white;
@@ -36,20 +30,34 @@ const Button=styled.button`
   font-size: 2rem;
   margin-left: 3%;
   margin-right: 3%;
+  color: white;
+  -webkit-text-stroke: 5px lightblue;
    &:hover{
        background: lightblue;
    }
-   
 `;
 
 const Character= (props)=>{
-     
+     function minusIfLessThanZero(){
+         if (props.value > 0 && props.num > 0){
+             props.setNum(props.num- 1 );
+              props.setValue(props.value -1 ) ;
+         }
+     };
+
+     function addIfMoreThanTen(){
+        if (props.value < 9 && props.num <= 9 ){
+           props.setNum(props.num + 1 );
+         props.setValue(props.value + 1) ;
+    }
+  };
    return(
     <Card> 
        <CardBox>
-        <Button> &lt; </Button>
+         <CardTitle>Characters</CardTitle>
+        <Button onClick={minusIfLessThanZero} > &lt; </Button>
         <img width='30%' src={props.url} alt='' />
-        <Button> > </Button>
+        <Button onClick={addIfMoreThanTen}> > </Button>
        </CardBox>
        <CardBox>
         <CardTitle> {props.name} </CardTitle>
@@ -60,9 +68,7 @@ const Character= (props)=>{
    
        </CardBox>
     </Card>
-   
-     
     );
-}
+   }
 
 export default Character;

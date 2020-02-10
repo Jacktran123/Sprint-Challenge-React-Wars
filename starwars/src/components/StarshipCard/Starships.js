@@ -1,5 +1,5 @@
 import React from 'react';
-// import reactstrap, { Card,CardImg, CardBody,Row, Col, CardTitle, CardText} from 'reactstrap';
+
 import styled from 'styled-components';
 
 
@@ -23,17 +23,15 @@ const Card= styled.div`
   text-align: center;
  `;
 
- const CardText= styled(CardTitle)`
-   color: #FFE300 ;
-   float: left;
- `;
 
  const Button=styled.button`
   width: 10%;
   border-radius: 50%;
-  font-size: 2rem;
   margin-left: 5%;
   margin-right: 3%;
+  font-size: 1.5rem;
+  color: white;
+  -webkit-text-stroke: 5px lightblue;
    &:hover{
        background: lightblue;
    }
@@ -41,13 +39,26 @@ const Card= styled.div`
 `;
 
 const Starships= (props)=>{
-     
+    function minusIfLessThanZero(){
+        if (props.valueOfShip > 0 ){
+           
+            return props.setValueOfShip(props.valueOfShip - 1 ) ;
+        }
+    };
+
+    function addIfMoreThanTen(){
+       if (props.valueOfShip < 9 ){
+           
+           return props.setValueOfShip(props.valueOfShip + 1) ;
+       }
+   };
    return(
     <Card> 
        <CardBox>
-        <Button> &lt;</Button>
+       <CardTitle>Starships</CardTitle>
+        <Button onClick={ minusIfLessThanZero}> &lt;</Button>
         <img width='40%' src={props.url} alt='' />
-        <Button> > </Button>
+        <Button onClick={addIfMoreThanTen}> > </Button>
        </CardBox>
        <CardBox>
         <CardTitle>  Name: {props.name} </CardTitle>
