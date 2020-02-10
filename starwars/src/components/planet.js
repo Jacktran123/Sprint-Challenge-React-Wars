@@ -1,13 +1,13 @@
 import React, {useState,useEffect} from 'react';
 import axios from 'axios';
 import styled from 'styled-components';
-import PlanetItem from './planetitem';
+
 
  const PlanetCardBox= styled.div`
 width: 100%;
 border: 1px solid red;
-margin-top: 3%;
-
+margin-top:3%;
+  
 `;
 
 const PlanetCardBoxOne=styled(PlanetCardBox)`
@@ -16,6 +16,20 @@ const PlanetCardBoxOne=styled(PlanetCardBox)`
  display: flex;
  flex-direction: row;
  flex-wrap: wrap;
+  img{
+      margin-top: 2%;
+      margin-left: 5%;
+      margin-bottom: 2%;
+  }
+`;
+
+const PlanetCardContainer=styled.div`
+    width: 250px;
+    margin: 1rem;
+	display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+	padding: 0 2rem 1rem;
 `;
 
 const PlanetTitle=styled.h1`
@@ -23,20 +37,14 @@ color: white;
 text-align: center;
 `;
 
-const Planet=()=> {
-   const [planet, setPlanet]=useState([]);
-  const [photoArray, setPhotoArray]=useState([]);
 
-   useEffect(()=>{
-     axios
-     .get('https://swapi.co/api/planets/')
-     .then(res=>{
-         const planetData= res.data.results;
-         let photoArray= res.data.results;
-        let photoArrayOne= photoArray.map(e=>e.url.slice(29,-1));
-        setPhotoArray(photoArrayOne);
-         setPlanet(planetData)});
-   }, []);
+
+const Planet=()=> {
+ 
+   const photoArrayImg=[2,3,4,5,6,7,8,9,10,11];
+ 
+
+  
 
     return(
         <PlanetCardBox>
@@ -44,9 +52,11 @@ const Planet=()=> {
         <PlanetTitle> Planets </PlanetTitle>
         
         <PlanetCardBoxOne>
-         {planet.map((post,index)=>(
-          <PlanetItem post={post}  key={index}/>))};
-        
+         
+        {photoArrayImg.map((i,id)=> (
+           <img src={`https://starwars-visualguide.com/assets/img/planets/${i}.jpg`} key={id} alt=''/> ))}
+         
+         
         </PlanetCardBoxOne>
         </PlanetCardBox>
         
