@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://starwars-visualguide.com/#/starships/5 -->
+<html lang="en" ng-app="StarWarsApp" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style><meta name="viewport" content="width=device-width, initial-scale=1"><title>Star Wars: A Visual Guide</title><link rel="icon" type="image/gif" href="https://starwars-visualguide.com/saber.gif"><link rel="stylesheet" href="./16_files/lumx.css"><link rel="stylesheet" href="./16_files/styles.css"><script async="" src="./16_files/analytics.js.download"></script><script src="./16_files/jquery.js.download"></script><script src="./16_files/velocity.js.download"></script><script src="./16_files/moment-with-locales.js.download"></script><script src="./16_files/angular.js.download"></script><script src="./16_files/angular-route.js.download"></script><script src="./16_files/angular-cookies.js.download"></script><script src="./16_files/lumx.js.download"></script><script src="./16_files/underscore.js.download"></script><script src="./16_files/angular-underscore-module.js.download"></script><script src="./16_files/app.js.download"></script><script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-73518206-1', 'auto');
+    ga('send', 'pageview');
+    </script></head><body datasqstyle="{&quot;top&quot;:0,&quot;position&quot;:&quot;static&quot;}" datasquuid="c0caf32a-3301-46d9-91a6-f0c4ff92e6a9" style="top: 40px; position: relative;"><div class="stars" datasqstyle="{&quot;top&quot;:null}" datasquuid="c0caf32a-3301-46d9-91a6-f0c4ff92e6a9" datasqtop="40" style="top: 40px;"></div><div class="twinkling" datasqstyle="{&quot;top&quot;:null}" datasquuid="c0caf32a-3301-46d9-91a6-f0c4ff92e6a9" datasqtop="40" style="top: 40px;"></div><header ng-controller="headerController" class="ng-scope"><div class="help"><button class="btn btn--m bgc-yellow-400 tc-grey-900 btn--fab" lx-ripple="" ng-click="openDialog(&#39;help&#39;)" style="position: relative; overflow: hidden;"><i class="mdi mdi-help"></i></button><div class="dialog dialog--l ng-scope" id="help" auto-close="true" datasqstyle="{&quot;top&quot;:null}" datasquuid="c0caf32a-3301-46d9-91a6-f0c4ff92e6a9" datasqtop="72" style="top: 72px;"><!-- ngIf: lxDialogIsOpened --></div></div><div class="logo"><div class="title tc-yellow-400">star</div><div class="subtitle">A VISUAL GUIDE</div><div class="title tc-yellow-400">wars</div></div></header><div class="stars" datasqstyle="{&quot;top&quot;:null}" datasquuid="c0caf32a-3301-46d9-91a6-f0c4ff92e6a9" datasqtop="40" style="top: 40px;"></div><div class="twinkling" datasqstyle="{&quot;top&quot;:null}" datasquuid="c0caf32a-3301-46d9-91a6-f0c4ff92e6a9" datasqtop="40" style="top: 40px;"></div><!-- ngView:  --><div class="view-container ng-scope" ng-view=""><div class="content ng-scope"><div class="nav-container"><breadcrumbs crumbs="crumbs" page-title="Sentinel-class landing craft" class="ng-isolate-scope"><div class="breadcrumbs fs-subhead ng-binding">
+	<!-- ngRepeat: crumb in crumbs --><div class="crumb ng-scope" ng-repeat="crumb in crumbs">
+		<a ng-href="#/" class="ng-binding" href="https://starwars-visualguide.com/#/">Home</a>&nbsp;/&nbsp;
+	</div><!-- end ngRepeat: crumb in crumbs --><div class="crumb ng-scope" ng-repeat="crumb in crumbs">
+		<a ng-href="#/starships?page=1" class="ng-binding" href="https://starwars-visualguide.com/#/starships?page=1">Starships</a>&nbsp;/&nbsp;
+	</div><!-- end ngRepeat: crumb in crumbs -->Sentinel-class landing craft
+</div></breadcrumbs></div><div flex-container="row" flex-gutter="24"><div flex-item=""><details-badge class="wide ng-isolate-scope" img-url="starship.img_url" header="starship.name"><div class="card details-badge">
+	<!-- ngIf: imgUrl --><div class="details details-image ng-scope" ng-if="imgUrl" ng-style="{&#39;background-image&#39;: &#39;url(./assets/img/starships/5.jpg), url(./assets/img/big-placeholder.jpg)&#39;}" style="background-image: url(&quot;./assets/img/starships/5.jpg&quot;), url(&quot;./assets/img/big-placeholder.jpg&quot;);">
+	</div><!-- end ngIf: imgUrl -->
+	<div class="details details-text">
+		<div class="p+">
+			<strong class="fs-headline display-block ng-binding">Sentinel-class landing craft<strong>
+			<p class="fs-body-1 tc-black-2" ng-transclude=""><span class="ng-binding ng-scope">Model: Sentinel-class landing craft</span><br class="ng-scope"><span class="ng-binding ng-scope">Manufacturer: Sienar Fleet Systems, Cyngus Spaceworks</span><br class="ng-scope"><span class="ng-binding ng-scope">Class: Landing Craft</span><br class="ng-scope"><span class="ng-binding ng-scope">Cost: 240,000 credits</span><br class="ng-scope"><span class="ng-binding ng-scope">Speed: 1,000km/h</span><br class="ng-scope"><span class="ng-binding ng-scope">Hyperdrive Rating: 1.0</span><br class="ng-scope"><span class="ng-binding ng-scope">MGLT: 70</span><br class="ng-scope"><span class="ng-binding ng-scope">Length: 38m</span><br class="ng-scope"><span class="ng-binding ng-scope">Cargo Capacity: 180 metric tons</span><br class="ng-scope"><span class="ng-binding ng-scope">Mimimum Crew: 5</span><br class="ng-scope"><span class="ng-binding ng-scope">Passengers: 75</span></p>
+		</strong></strong></div><strong class="fs-headline display-block"><strong>
+	</strong></strong></div><strong class="fs-headline display-block"><strong>
+</strong></strong></div></details-badge></div></div><div class="related-container"><related-links class="related-card ng-isolate-scope" header="Related Films" factory="filmFactory" urls="starship.filmUrls"><div flex-item="">
+    <div class="card">
+        <div class="p+">
+            <strong class="fs-subhead display-block ng-binding">Related Films</strong>
+        </div>
+        <div class="divider divider--dark"></div>
+        <div ng-show="hasError" class="fs-subhead p+ ng-binding ng-hide"></div>      
+        <div class="loading ng-hide" ng-hide="loaded">
+            <lx-progress lx-type="circular" lx-color="red" class="ng-isolate-scope"><div class="progress-container progress-container--circular progress-container--red" ng-style="lxProgress.getProgressDiameter()" style="transform: scale(0.5);">
+    <!-- ngIf: lxProgress.lxType === 'circular' --><div class="progress-circular-wrapper ng-scope" ng-if="lxProgress.lxType === &#39;circular&#39;">
+        <div class="progress-circular">
+            <div class="progress-circular__gap"></div>
+
+            <div class="progress-circular__left">
+                <div class="progress-circular__half-circle"></div>
+            </div>
+
+            <div class="progress-circular__right">
+                <div class="progress-circular__half-circle"></div>
+            </div>
+        </div>
+    </div><!-- end ngIf: lxProgress.lxType === 'circular' -->
+
+    <!-- ngIf: lxProgress.lxType === 'linear' -->
+</div>
+</lx-progress>
+            <span>Loading...</span>
+        </div>
+        <div ng-hide="hasData || !loaded" class="fs-subhead p+ ng-hide">There are no related items for this category</div>
+        <div class="list p">
+            <!-- ngRepeat: item in chunk --><div ng-repeat="item in chunk" class="list-item ng-scope">
+                <div class="link-icon">
+                    <img ng-src="./assets/img/films/1.jpg" width="40" height="40" class="img-round" onerror="this.src=&#39;./assets/img/placeholder-small.jpg&#39;" src="./16_files/1.jpg">
+                </div>
+                <div class="link-name">
+                    <a class="card-link ng-binding" ng-href="#/films/1" href="https://starwars-visualguide.com/#/films/1">Episode IV: A New Hope</a>
+                </div>
+            </div><!-- end ngRepeat: item in chunk -->
+        </div>
+        <div class="divider divider--dark ng-hide" ng-hide="totalPages === 1 || !hasData"></div>
+        <div class="list-paginate">
+            <button ng-click="loadPrevious()" ng-hide="currentPage === 1" class="btn btn--m btn--black btn--icon ng-hide" lx-ripple="" style="position: relative; overflow: hidden;">
+                <i class="mdi mdi-chevron-left"></i>
+            </button>
+            <span ng-show="currentPage === totalPages &amp;&amp; totalPages &gt; 1" class="ng-hide">Previous</span>
+            <span ng-show="currentPage === 1 &amp;&amp; totalPages &gt; 1" class="ng-hide">Next</span>
+            <button ng-click="loadNext()" ng-hide="currentPage === totalPages || !hasData" class="btn btn--m btn--black btn--icon ng-hide" lx-ripple="" style="position: relative; overflow: hidden;">
+                <i class="mdi mdi-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+</div></related-links><related-links class="related-card ng-isolate-scope" header="Related Pilots" factory="characterFactory" urls="starship.characterUrls"><div flex-item="">
+    <div class="card">
+        <div class="p+">
+            <strong class="fs-subhead display-block ng-binding">Related Pilots</strong>
+        </div>
+        <div class="divider divider--dark"></div>
+        <div ng-show="hasError" class="fs-subhead p+ ng-binding ng-hide"></div>      
+        <div class="loading ng-hide" ng-hide="loaded">
+            <lx-progress lx-type="circular" lx-color="red" class="ng-isolate-scope"><div class="progress-container progress-container--circular progress-container--red" ng-style="lxProgress.getProgressDiameter()" style="transform: scale(0.5);">
+    <!-- ngIf: lxProgress.lxType === 'circular' --><div class="progress-circular-wrapper ng-scope" ng-if="lxProgress.lxType === &#39;circular&#39;">
+        <div class="progress-circular">
+            <div class="progress-circular__gap"></div>
+
+            <div class="progress-circular__left">
+                <div class="progress-circular__half-circle"></div>
+            </div>
+
+            <div class="progress-circular__right">
+                <div class="progress-circular__half-circle"></div>
+            </div>
+        </div>
+    </div><!-- end ngIf: lxProgress.lxType === 'circular' -->
+
+    <!-- ngIf: lxProgress.lxType === 'linear' -->
+</div>
+</lx-progress>
+            <span>Loading...</span>
+        </div>
+        <div ng-hide="hasData || !loaded" class="fs-subhead p+">There are no related items for this category</div>
+        <div class="list p">
+            <!-- ngRepeat: item in chunk -->
+        </div>
+        <div class="divider divider--dark ng-hide" ng-hide="totalPages === 1 || !hasData"></div>
+        <div class="list-paginate">
+            <button ng-click="loadPrevious()" ng-hide="currentPage === 1" class="btn btn--m btn--black btn--icon ng-hide" lx-ripple="" style="position: relative; overflow: hidden;">
+                <i class="mdi mdi-chevron-left"></i>
+            </button>
+            <span ng-show="currentPage === totalPages &amp;&amp; totalPages &gt; 1" class="ng-hide">Previous</span>
+            <span ng-show="currentPage === 1 &amp;&amp; totalPages &gt; 1" class="ng-hide">Next</span>
+            <button ng-click="loadNext()" ng-hide="currentPage === totalPages || !hasData" class="btn btn--m btn--black btn--icon ng-hide" lx-ripple="" style="position: relative; overflow: hidden;">
+                <i class="mdi mdi-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+</div></related-links></div></div></div><footer><div class="footer-content"><div class="copyright">DESIGNED AND DEVELOPED BY <a href="https://sarvey-webdev.com/">TIM SARVEY</a> ©2016</div><div class="find-me"><span class="follow">FOLLOW ME:</span> <a href="https://www.linkedin.com/in/timsarvey"><i class="mdi mdi-linkedin-box"></i> LinkedIn</a> <a href="https://github.com/tbone849"><i class="mdi mdi-github-box"></i> GitHub</a></div><div class="disclaimer">Star Wars and all associated names and/or images are copyright Lucasfilm Ltd. Images were freely collected from <a href="http://starwars.wikia.com/wiki/Main_Page">Wookiepedia</a>.</div></div></footer><div id="sqseobar2" class="sqseobar2-white sqseobar2-horizontal"><div class="sqseobar2-inner"><img src="chrome-extension://hjafdaanjmhpkbcidfnopbaelhpjggjf/static/svg/seoquake-icon.svg" class="sqseobar2-logo"><a class="sqseobar2-link sqseobar2-reloadButton sqseobar2-item-hidden"><span>Load all parameters</span></a><div class="sqseobar2-parameters"><div class="sqmore-container" style="width: 497px;"><div class="sqseobar2-parameters-container"><div class="sqseobar2-parameterItemInline"><span class="sqicn sqicn-google"></span><span class="sqseobar2-parameterItemInline-title sqseobar2-parameterItemInline-title-full">Google index</span><span class="sqseobar2-parameterItemInline-title">I</span><a href="https://www.google.com/search?hl=en&amp;safe=off&amp;q=site%3Astarwars-visualguide.com&amp;btnG=Search&amp;gws_rd=cr" target="_blank" class="seoquake-params-request">1</a></div><div class="sqseobar2-parameterItemInline"><span class="sqicn sqicn-semrush"></span><span class="sqseobar2-parameterItemInline-title sqseobar2-parameterItemInline-title-full">SEMrush backlinks</span><span class="sqseobar2-parameterItemInline-title">L</span><a href="https://www.semrush.com/analytics/backlinks/backlinks/?q=https%3A%2F%2Fstarwars-visualguide.com%2F%23%2Fstarships%3Fpage%3D1&amp;searchType=url?utm_source=seoquake&amp;utm_medium=toolbar&amp;utm_campaign=params&amp;ref=174537735" target="_blank" class="seoquake-params-request">0</a></div><div class="sqseobar2-parameterItemInline"><span class="sqicn sqicn-semrush"></span><span class="sqseobar2-parameterItemInline-title sqseobar2-parameterItemInline-title-full">SEMrush subdomain backlinks</span><span class="sqseobar2-parameterItemInline-title">LD</span><a href="https://www.semrush.com/analytics/backlinks/backlinks/starwars-visualguide.com:domain?utm_source=seoquake&amp;utm_medium=toolbar&amp;utm_campaign=params&amp;ref=174537735" target="_blank" class="seoquake-params-request">85</a></div><div class="sqseobar2-parameterItemInline"><span class="sqicn sqicn-bing"></span><span class="sqseobar2-parameterItemInline-title sqseobar2-parameterItemInline-title-full">Bing index</span><span class="sqseobar2-parameterItemInline-title">I</span><a href="https://www.bing.com/search?q=site%3Astarwars-visualguide.com&amp;FORM=QBRE" target="_blank" class="seoquake-params-request">1</a></div><div class="sqseobar2-parameterItemInline"><span class="sqicn sqicn-alexa"></span><span class="sqseobar2-parameterItemInline-title sqseobar2-parameterItemInline-title-full">Alexa rank</span><span class="sqseobar2-parameterItemInline-title">Rank</span><a href="https://www.alexa.com/siteinfo/starwars-visualguide.com" target="_blank" class="seoquake-params-request">n/a</a></div></div></div><button class="sqseobar2-button-more" style="visibility: visible;">More data</button></div><div class="sqseobar2-right-container"><div class="sqseobar2-right-container-buttons"><a class="sqseobar2-link sqseobar2-link-pageinfo"><span>Summary report</span></a><a class="sqseobar2-link sqseobar2-link-diagnosis"><span>Diagnosis</span></a><a class="sqseobar2-link sqseobar2-link-density"><span>Density</span></a><a class="sqseobar2-link sqseobar2-link-external"><span>External links</span><span class="sqseobar2-link-value">4</span></a><a class="sqseobar2-link sqseobar2-link-internal"><span>Internal links</span><span class="sqseobar2-link-value">11</span></a><a class="sqseobar2-link sqseobar2-link-siteaudit" href="https://starwars-visualguide.com/#"><span>Site audit</span><span class="sqseobar2-link-value">n/a</span></a></div><button class="sqseobar2-button-close" title="Close panel"></button><button class="sqseobar2-button-configure" title="Configure panel"></button></div></div></div></body><style id="igor_ext_nofollow">a[rel~='nofollow']{outline:.14em dotted red !important;outline-offset:.2em;}a[rel~='nofollow'] > img{outline:2px dotted red !important;outline-offset:.2em;}</style></html>
